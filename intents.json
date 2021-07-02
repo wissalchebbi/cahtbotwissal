@@ -1,0 +1,253 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["salut", "bonjour", "bonsoir","hi","hola", "Hello", "Good day"],
+         "responses": ["salut c'est quoi votre problème monsieur ?", "bonjour c'est quoi votre problème monsieur ?", "bonsoir c'est quoi votre problème monsieur ?","hi c'est quoi votre problème monsieur ?","hola c'est quoi votre problème monsieur ?", "Hello c'est quoi votre problème monsieur ?", "Good day c'est quoi votre problème monsieur ?"],
+         "context": []
+        },
+        {"tag": "excés essence",
+         "patterns": ["j'ai un excès de consumation d'essence "],
+         "responses": ["il faut faire une Analyzer de gaz ,il faut  faire un diagnostic électronique ,vérification du périodicité des entretiens , capteur température moteur ,sonde lambda amant et aval , capteur de pression d'air d'admission ,débitmètre massique d'air"],
+         "context": [""]
+        },
+        {"tag": "fumee noir",
+         "patterns": ["j'ai une fumée noir"],
+         "responses": ["il faut faire un diagnostic électronique  et Analyzer de gaz"],
+         "context": [""]
+        },
+        {"tag": "fummee blanc",
+         "patterns": ["j'ai une fumée blache"],
+         "responses": ["il faut tout d'abord faire la vérification du niveau d'huile moteur a l'arrêt "],
+         "context": [""]
+        },
+        {"tag": "se cale tout seul",
+         "patterns": ["le moteur se cale tout seul ,le ralenti est variable"],
+         "responses": ["il faut faire diagnostic électronique cause probable : problème circuit d'air =>  , filtre a air , boitier papillon,capteur de pression d'air,débitmètre d'air massique,fuite d'air au niveau des durite d'air ,  canalisation d'air d'admission ,collecteur admission "],
+         "context": [""]
+        },
+        {"tag": "oudeur",
+         "patterns": ["j'ai une odeur d'essence a l'intérieur du voiture "],
+         "responses": ["c'est un défaut de sécurité attention il faut le régler en urgence ,vérification du fuite externe au niveau du pompe essence et sa  canalisation "],
+         "context": [""]
+        },
+        {"tag": "puissance",
+         "patterns": ["j'ai une manque de puissance ","très long en reprise en cas de changement de vitesse ","difficulté pour monter dans les ponte "],
+         "responses": ["il faut faire diagnostic électronique ,et vérification débit pompe a essence ,vérification du filtre a essence s'il existe,vérification du bouchage du catalyseur"],
+         "context": [""]
+        },
+        {"tag": "demarrage",
+         "patterns": ["après quelque temps d'arrêt soit le matin ou pendant la journée le moteur ne démarre pas a un carre de tour "],
+         "responses": ["il faut faire diagnostic électronique ,faire un test de débit de pompe a essence et vérification du fuite interne dans les canalisation d'essence ou dans la pompe elle-même,vérification du capteur arbre a came ,vérification du capteur volant moteur ,vérification du capteur température moteur,faire l'entretien et adaptation du boitier papillon"],
+         "context": [""]
+        },
+        {"tag": "egr",
+         "patterns": ["j'ai une moque de puissance et le témoin du gestion moteur s'allume en continues  "],
+         "responses": ["il faut faire diagnostic électronique ,vérification du vanne EGR ,Faire nettoyer l' EGR et sans circuit  et adaptation ,en cas que le problème perchiste il faut changer l'EGR"],
+         "context": [""]
+        },
+        {"tag": "egr",
+         "patterns": ["le moteur est étouffé"],
+         "responses": ["il faut faire diagnostic électronique,vérification du catalyseur,vérification du ligne d'échappement"],
+         "context": [""]
+        },
+        {"tag": "echappement",
+         "patterns": ["j'ai raté ma visite technique , on ma dit que une fuite dans le ligne d'échappement"],
+         "responses": ["il faut faire une Analyzer de gaz ,réparation du fuite chez un echapmoniste "],
+         "context": [""]
+        },
+        {"tag": "vibration",
+         "patterns": ["vibration anormale du moteur "],
+         "responses": ["il faut faire diagnostic électronique ,en cas de changement de vitesse vous sentez un ratée "],
+         "context": ["rateoui,ratenon"]
+        },
+        {"tag": "rateoui",
+         "patterns": ["oui"],
+         "responses": ["il faut faire diagnostic électronique ,vérification du circuit 'allumage : bougie d'allumage , fils bougies d'allumage , bobine d'allumage,vérification circuit d'injection essence : injecteur , connecteur électrique des injecteurs mal montée ,fils de connexion électrique ,calculateur,vérification des pièces mécanique soupapes et cylindre,faire test de compression moteur"],
+         "context": [""]
+        },
+        {"tag": "ratenon",
+         "patterns": ["non"],
+         "responses": ["il faut faire diagnostic électronique ,vérification du circuit 'allumage : bougie d'allumage , fils bougies d'allumage , bobine d'allumage ,vérification circuit d'injection essence : injecteur , connecteur électrique des injecteurs mal montée ,fils de connexion électrique ,calculateur ,vérification des pièces mécanique soupapes et cylindre ,faire test de compression moteur"],
+         "context": [""]
+        },
+        {"tag": "temoin",
+         "patterns": ["j'ai le temoin de gestion moteur allume"],
+         "responses": ["le comportement de votre moteur est il normale"],
+         "context": ["raoui"]
+        },
+        {"tag": "raoui",
+         "patterns": ["oui j'ai une raté "],
+         "responses": ["une raté au moment de reprise et changement de vitesse ?"],
+         "context": ["vitesseoui"]
+        },
+        {"tag": "vitesseoui",
+         "patterns": ["oui il y a"],
+         "responses": ["vérification du système d'allumage ,bougie d'allumage ,fils bougies d'allumage ,bobine d'allumage"],
+         "context": [""]
+        },
+        {"tag": "carburateurinjection",
+         "patterns": ["j'ai raté ma visite technique , on ma dit que j'ai une fumé noir "],
+         "responses": ["votre moteur est classique avec carburateur ou injection électronique "],
+         "context": ["carburateur,injection"]
+        },
+        {"tag": "carburateur",
+         "patterns": ["non c'est avec carburateur"],
+         "responses": ["il faut faire une Analyzer de gaz /n ,entretien et réglage carburateur ,/n vérification du circuit d'allumage /n vérification ou changement filtre a air /n révision complète du carburateur  /n vérification du fuite d'échappement"],
+         "context": [""]
+        },
+        {"tag": "injection",
+         "patterns": ["c'est un moteur a injection électronique "],
+         "responses": ["il faut faire diagnostic électronique  /n ,il faut faire une Analyzer de gaz ,/n vérification du périodicité des entretiens /n capteur température moteur /n sonde lambda amant et aval  /n capteur de pression d'air d'admission /n débitmètre massique d'air"],
+         "context": [""]
+        },
+        {"tag": "bruit",
+         "patterns": ["j'ai un bruit très aigu dans le compartiment moteur  "],
+         "responses": ["ou exactement ?"],
+         "context": ["oubruit"]
+        },
+        {"tag": "oubruit",
+         "patterns": ["au niveau du courroie accessoire "],
+         "responses": ["au ralentie et en accélération ?"],
+         "context": ["ralentiouacce"]
+        },
+        {"tag": "ralentiouacce",
+         "patterns": ["il est plus fort en accélération  "],
+         "responses": ["il faut vérifier courroie accessoire et tendeur ou changement "],
+         "context": [""]
+        },
+        {"tag": "elect",
+         "patterns": ["j'ai un problème dans mon tableau de bord "],
+         "responses": ["a quelle niveau s'il vaut plaie monsieur ?"],
+         "context": ["elecun"]
+        },
+        {"tag": "electun",
+         "patterns": ["les lampe témoin s'allume ensemnle et s'etein tout seul  "],
+         "responses": ["est ce que c'est plus grave au demmarage ?"],
+         "context": ["elecdeux"]
+        },
+        {"tag": "electdeux",
+         "patterns": ["oui c'est vrai "],
+         "responses": ["il faut vérification du baterie test du voltage au demmarage  avant toute intervetion /n depuis quand vous avez changé votre batterie ?"],
+         "context": ["electrois,elecquatre"]
+        },
+        {"tag": "electrois",
+         "patterns": ["depuis presque 2 ans "],
+         "responses": ["il faut changer votre batterie tout d'abord et faire test de charge de l'alternateur "],
+         "context": [""]
+        },
+        {"tag": "electquatre",
+         "patterns": ["ma batterie est neuf elle a 2 mois seulement "],
+         "responses": ["donc il faut faire un test de batterie au demmarage et test alternateur au ralentie et en acceleration et aprées réparation il faut faire diagnostic electroniqiue et effacement de fefaut "],
+         "context": [""]
+        },
+        {"tag": "demmare",
+         "patterns": ["le moteur ne démarre pas  surtout le matin je doit pouser la voiture pour qu'elle demarre "],
+         "responses": ["est ce que le tableau de bord sa'allume au contact"],
+         "context": ["demmareun,demmaredeux"]
+        },
+        {"tag": "demmareun",
+         "patterns": ["oui mais faiblement"],
+         "responses": ["default de batterie a changer et vérification du charge alternateur "],
+         "context": [""]
+        },
+        {"tag": "demmaredeux",
+         "patterns": ["non le moteur tourne mais ne demmare que lorsqu'on fait pousser la voiture  et batterie et alternateur en bonne etat"],
+         "responses": ["défaut compression moteur il faut faire un test de compression "],
+         "context": [""]
+        },
+        {"tag": "consommationhuile",
+         "patterns": ["j'ai une consommation d'huile moteur"],
+         "responses": ["est ce vous avez remarqué du la fumé blanche au niveau d'echapement"],
+         "context": ["consommationhuileun"]
+        },
+        {"tag": "consommationhuileun",
+         "patterns": ["non pas de fumee blanche"],
+         "responses": ["est ce qu'ilya de trace d'huile sous le moteur"],
+         "context": ["consommationhuiledeux"]
+        },
+        {"tag": "consommationhuiledeux",
+         "patterns": ["oui c'est vrai il y a de trace d'huile sous le moteur"],
+         "responses": ["il faut vérifier l'existance de fuite externe : joint cache soupape ,para huile "],
+         "context": [""]
+        },
+        {"tag": "temoinmoteur",
+         "patterns": ["j'ai le témoin de gestion moteur allumé"],
+         "responses": ["le comportement de votre moteur est il normale "],
+         "context": ["temoinmoteurun"]
+        },
+        {"tag": "temoinmoteurun",
+         "patterns": ["oui rien de special"],
+         "responses": ["il faut faire du diagnostic moteur et faire la vérification de votre entretien périodique /n  changement : filtre a air /n  changement : filtre a essence s'il existe  /n  changement : bougie d'allumage"],
+         "context": [""]
+        },
+        {"tag": "sondelambda",
+         "patterns": ["on ma dit de changer le sonde lambda "],
+         "responses": ["pouquoi ?"],
+         "context": ["sondelambdaun"]
+        },
+        {"tag": "sondelambdaun",
+         "patterns": ["a cause d'excès de consommation essence "],
+         "responses": ["vous devez faire diagnostic tout d'abord pour etre sur car sans diagnostic vous ne pouvez pas s'assurer du défaut"],
+         "context": [""]
+        },
+        {"tag": "entretienperiodique",
+         "patterns": ["est ce que l'entretien du circuit de depolution est possible "],
+         "responses": ["oui bien sur"],
+         "context": ["entretienperiodiqueun"]
+        },
+        {"tag": "entretienperiodiqueun",
+         "patterns": ["Comment"],
+         "responses": ["a l'aide de l'appareil de decalaminage a hydrogene "],
+         "context": ["entretienperiodiquedeux"]
+        },
+        {"tag": "entretienperiodiquedeux",
+         "patterns": ["est ce qu'elle est valable en cas de défaut mécanique "],
+         "responses": ["non dans se cas il faut faire les réparation nécessaire tout d'abord "],
+         "context": ["entretienperiodiquetrois"]
+        },
+        {"tag": "entretienperiodiquetrois",
+         "patterns": ["et le diagnostic est ce qu'il est nécessaire "],
+         "responses": ["oui pour avoir les meilleurs résultat possible "],
+         "context": [""]
+        },
+        {"tag": "vibmouteur",
+         "patterns": ["je sent une vibration au moteur avec de fumé blanche"],
+         "responses": ["il faut vérifier s'il Ya une presence d'huile moteur au niveau des bougies d'allumage,est ce que le niveau d'huile est vérifier ?"],
+         "context": ["vibmouteurun"]
+        },
+        {"tag": "vibmouteurun",
+         "patterns": ["oui , il Ya une perte de niveau","oui c'est vrai"],
+         "responses": ["alors c'est un default mécanique soit jeux de segment ,soit parahuile guide soupape ,et il faut fairte test de compression moteur ,il faut faire un diagnostic électronique avant et après les reparations"],
+         "context": [""]
+        },
+        {"tag": "vibmouteurdeux",
+         "patterns": ["je sent une vibration au moteur avec declanchement brusque du 2éme vitesse du ventulateur "],
+         "responses": ["il faut faire un diagnostic électronique,est ce que le témoin du gestion moteur est allume ?"],
+         "context": ["vibmoteurdeuxun"]
+        },
+        {"tag": "vibmouteurdeuxun",
+         "patterns": ["oui le temoin est allume "],
+         "responses": ["il faut faire un diagnostic electronique,faire vérification du système d'allumage,et système injection électronique,le declanchement du ventulateur c'est un système mis par défaut d'après le constructeur pour vous allez faire vos reparation"],
+         "context": [""]
+        },
+        {"tag": "papillon",
+         "patterns": ["j'ai fait le nettoyage du corp papillon tout seul avec produitet depuis il Ya un galopage du ralentie "],
+         "responses": ["est ce que vous avez fait le diagnostic moteur ?"],
+         "context": ["papillonun"]
+        },
+        {"tag": "papillonun",
+         "patterns": ["non pas encore"],
+         "responses": ["il faut faire un diagnostic électronique,effacement de défaut ,et adaptation du boitier papillon avec l'appareil du diagnostic"],
+         "context": [""]
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+         "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+         "context": [""]
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure"],
+         "context": [""]
+        }
+   ]
+}
